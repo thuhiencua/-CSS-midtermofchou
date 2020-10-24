@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    --font-family-1: 'Courier New', sans-serif;
+    --font-family-2: 'Times New Roman', sans-serif;
+}
+html {
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    line-height: 160%;
+    font-family: var(--font-family-2);
+}
+
+h1, h2, h3 {
+    color: #f08e8e
+}
+.summary {
+    color: black;
+    padding: 30px 5%;
+    background: white;
+    font-size: 100%;
+}
+h3 {
+    font-size: 250%;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 12px 120;
+    text-align: center;
+}
+
+h3:after {
+    content: "";
+    position: relative;
+    width: 120px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 50px;
+    background: #d67e7e;
+}
+.preamble:hover h3:after,
+.explanation:hover h3:after,
+.participation:hover h3:after,
+.benefits:hover h3:after,
+.requirements:hover h3:after 
+ 
+.preamble:hover h3,
+.explanation:hover h3,
+.participation:hover h3,
+.benefits:hover h3,
+.requirements:hover h3 {
+    background: white;
+}
+
+p {
+    margin: 0px 0;
+    margin-top: 0px; 
+	text-align: left;
+	margin-left: 10px;
+}
+header {
+    color: white;
+    width: 100vw;
+    height: 50vh;
+    background-color: #f08e8e;
+    background-image: url("https://images.app.goo.gl/8GkGvZEf3C74MmcZA");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    color: white;
+    font-size: 600%;
+    letter-spacing: 12px;
+    margin: 70px 0;
+    text-align: center;
+    font-weight: 300;
+    background: #f08e8e;
+    line-height: 100%;
+
+}
+
+header h2 {
+    color: white;
+    position: relative;
+	top: 150px;
+	left: 20px;
+	width: 400px;
+	height: 50px;
+	padding: 0px;
+	margin: 0px;
+}
+
+header div p {
+    font-family: var(--font-family-2);
+    color: red;
+    margin: 10px 10;
+    text-align: center;
+    font-style: italic;
+    font-size: 80%;
+}
+
+header div p a {
+    color: #e3edff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+header div p a:hover {
+    background: rgba(10, 10, 10, 0.4);
+}
+
+.preamble {
+    color: white;
+    padding: 80px 5%;
+    background: black;
+    font-size: 100%;
+}
+.preamble p {
+    text-align: match-parent;
+}
+.explanation {
+    padding: 50px 5%;
+    text-align: center;
+    font-size: 100%;
+    background-color: white;
+}
+.participation a,
+.benefits a,
+.requirements a {
+    color: rgb(236, 157, 157);
+    font-style: italic,underline;
+}
+.participation a:hover,
+.benefits a:hover,
+.requirements a:hover {
+    text-decoration: underline;
+}
+
+.participation {
+    color: white;
+    padding: 80px 5% 20px 5%;
+    background: black;
+    text-align: justify;
+    font-size: 100%;
+}
+.benefits {
+    padding: 20px 5% 80px 5%;
+    background: white;
+    text-align: justify;
+    font-size: 100%;
+}
+.requirements {
+    color: white;
+    background-color: black;
+    padding: 80px 5%;
+    text-align: justify;
+    font-size: 100%;
+}
+footer a {
+    padding: 4px 45%;
+    background: #f08e8e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 100%;
+    overflow: auto;
+}
+
+.wrapper {
+    background: white;
+    display: flex;
+    flex: row-reverse;
+    justify-content: space-between;
+    padding: 20px 5%;
+    border-top: 5px solid rgba(0,0,0,0.07);
+    font-size: 100%;
+}
+
+.design-selection ul li,
+.zen-resources ul li,
+.design-archives ul li {
+    margin: 0px 0;
+}
+
+.design-selection ul li span {
+    font-style: normal;
+    font-size: 100%;
+    margin: 0 1px;
+}
+
+.design-selection ul li a,
+.zen-resources ul li a,
+.design-archives ul li a {
+    color: black;
+    background-color: #f08e8e;
+}
+
+.design-selection ul li a:hover,
+.zen-resources ul li a:hover,
+.design-archives ul li a:hover {
+    color: #f08e8e;
+}
+
+.indicator {
+    font-size: 120%;
+}
+.next a:hover span {
+    color: black; 
+    border-bottom: 2px solid #f08e8e;
+}
+
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 20px;
+    }
+    header h1 {
+        font-size: 450%;
+    }
+    header h2 {
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 20px;
+    }
+    header h1 {
+        font-size: 400%;
+        line-height: 100%;
+    }
+    header h2 {
+        font-size: 130%;
+        line-height: 100%;
+    }
+h3 {
+        font-size: 150%;
+    }
+p, a {
+        font-size: 100%;
+    }
+.wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+.design-selection nav li {
+        display: inline-block;
+        width: 100%;
+        margin: 10px 20px 20px 0;
+    }
+.zen-resources ul li {
+        display: inline-block;
+        width: 100%;
+        margin: 10px 20px 20px 0;
+    }
+}
